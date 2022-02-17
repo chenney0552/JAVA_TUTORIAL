@@ -99,7 +99,7 @@ ex: int myAge = 30;
 **Primitive Types**🔺
 byte, short, int, long, float, double, char, boolean
 
-//Declaring Variables🔺
+Declaring Variable
 1. byte age = 30;
 2. long viewsCount = 3_123_456L;
 3. float price = 10.99F;
@@ -113,3 +113,73 @@ double quotes. ex:4
 to it as a postfix. ex: 2
 • The default floating-point type in Java is double. To represent a float, we should
 append **F** to it as a postfix. ex:3
+
+**Comments**
+We use comments to add notes to our code.
+// This is a comment and it won’t get executed.
+
+**Reference Types**🔺
+In Java we have 8 primitive types. All the other types are reference types. These
+types don’t store the actual objects in memory. They store the _reference_ (or the
+address of) an object in memory.
+
+To use reference types, we need to allocate memory using the new operator. The
+memory gets automatically released when no longer used.
+ex: Date now = new Date();
+
+## DAY 3 JAVA Tutorial 
+###### Strings:
+Strings are reference types but we don’t need to use the new operator to allocate
+memory to them. We can declare string variables like the primitives since we use
+them a lot.
+EX: String message = “Hello World”+"!!";
+
+**_Useful String Methods_**
+• startsWith(“a”)
+• endsWith(“a”)
+• length()
+• indexOf(“a”)
+• replace(“a”, “b”)
+• toUpperCase()
+• toLowerCase()
+• trim()
+
+❗❗Strings are **immutable**, which means once we initialize them, their value cannot be
+changed. All methods that modify a string (like toUpperCase) return a new string
+object. The original string remains unaffected.
+
+**Escape Sequences**
+If you need to use a backslash or a double quotation mark in a string, you need to
+prefix it with a backslash. This is called escaping.
+
+Common escape sequences:
+• \\ (escaped the backslash\)
+• \" (escaped the double quotation")
+• \n (new line)
+• \t (tab)
+
+###### Arrays
+We use arrays to store a list of objects. We can store any type of object in an array
+(primitive or reference type). All items (also called elements) in an array have the
+same type.
+
+// Creating and and initializing an array of 5 elements
+int[] numbers = new int[3];
+numbers[0] = 10;
+numbers[1] = 20;
+numbers[2] = 30;
+
+// Shortcut
+int[] numbers = { 10, 20, 30 };
+
+Java arrays have a **fixed length (size)**. You cannot add or remove new items once
+you instantiate an array. If you need to add new items or remove existing items,
+you need to use one of the collection classes.
+
+**The Array Class**
+A few useful methods for working with arrays:
+
+•int[] numbers = { 4, 2, 7 };
+•Arrays.sort(numbers);
+•String result = Arrays.toString(numbers);
+•System.out.println(result);
