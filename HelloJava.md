@@ -183,3 +183,45 @@ A few useful methods for working with arrays:
 •Arrays.sort(numbers);
 •String result = Arrays.toString(numbers);
 •System.out.println(result);
+
+## DAY 4 JAVA Tutorial
+###### Multi-dimensional Arrays
+// Creating a 2x3 array (two rows, three columns)
+int[2][3] matrix = new int[2][3];
+matrix[0][0] = 10;
+
+// Shortcut
+int[2][3] matrix = {
+{ 1, 2, 3 },
+{ 4, 5, 6 }
+};
+
+###### Constants
+**Constants** (also called final variables) have a fixed value. Once we set them, we
+cannot change them.
+
+final float INTEREST_RATE = 0.04;
+
+By convention, we use CAPITAL LETTERS to name constants. Multiple words can
+be separated using an underscore.
+
+###### Arithmetic Expressions
+int x = 10 + 3; addition
+int x = 10 - 3; subtraction
+int x = 10 * 3; mulpiblication
+int x = 10 / 3; // division, returns an int 3
+float x = (float)10 / (float)3; // returns a float 3.333333...
+int x = 10 % 3; // modulus (remainder of division)
+
+**Increment and Decrement Operators**
+int x = 1;
+int y = x++; //y=1, x=2
+int z = ++x; //x=2, y=2
+
+x++; // Equivalent to x = x + 1
+x--; // Equivalent to x = x - 1
+
+**Augmented/compound Assignment Operator**
+int x = 1;
+x += 5; // Equivalent to x = x + 5
+-=; *=; /=
