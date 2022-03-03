@@ -83,6 +83,7 @@ every Blu-Ray player.
 $100,000 per year in the US.
 
 ## DAY 2 JAVA Tutorial 
+## TYPES
 ###### Variables
 We use variables to temporarily store data in computer’s memory. In Java, the type
 of a variable should be specified at the time of declaration.
@@ -225,3 +226,70 @@ x--; // Equivalent to x = x - 1
 int x = 1;
 x += 5; // Equivalent to x = x + 5
 -=; *=; /=
+
+## DAY 5 JAVA Tutorial
+###### Order of Operations
+Multiplication and division operators have a higher order than addition and
+subtraction. They get applied first. We can always change the order using
+parentheses.
+
+int x = 10 + 3 * 2; // 16
+int x = (10 + 3) * 2; // 26
+
+###### Casting
+In Java, we have two types of casting:
+• Implicit: happens automatically when we store a value in a larger or more
+precise data type.
+• Explicit: we do it manually.
+
+// Implicit casting happens because we try to store a short
+// value (2 bytes) in an int (4 bytes).
+short x = 1;
+int y = x;
+
+// Explicit casting
+int x = 1;
+short y = (short) x;
+
+To convert a **string** to a **number**, we use one of the following methods:
+• Byte.parseByte(“1”)
+• Short.parseShort(“1”)
+• Integer.parseInt(“1”)
+• Long.parseLong(“1”)
+• Float.parseFloat(“1.1”)
+• Double.parseDouble(“1.1”)
+
+###### Formatting Numbers
+NumberFormat currency = NumberFormat.getCurrencyInstance();
+String result = currency.format(“123456”); // $123,456
+
+NumberFormat percent = NumberFormat.getPercentInstance();
+String result = percent(“0.04”); // 4%
+
+###### Reading Input
+Scanner scanner = new Scanner(system.in);
+double number = scanner.nextDouble();
+byte number = scanner.nextByte();
+String name = scanner.next();
+String line = scanner.nextLine();
+
+## CONTROL FLOW
+###### Comparison Operators
+We use comparison operators to compare values.
+x == y // equality operator
+x != y. // in-equality operator
+x > y
+x >= y
+x < y
+x <= y
+
+###### Logical Operators
+We use logical operators to combine multiple boolean values/expressions.
+• x && y (AND): if both x and y are true, the result will be true.
+• x || y (OR): if either x or y or both are true, the result will be true.
+• !x (NOT): reverses a boolean value. True becomes false.
+
+bool hasHighIncome = true;
+bool hasGoodCredit = false;
+bool hasCriminalRecord = false;
+bool isEligible = (hasHighIncome || hasGoodCredit) && !isEligible;
