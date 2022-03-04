@@ -293,3 +293,46 @@ bool hasHighIncome = true;
 bool hasGoodCredit = false;
 bool hasCriminalRecord = false;
 bool isEligible = (hasHighIncome || hasGoodCredit) && !isEligible;
+
+## DAY 6 JAVA Tutorial
+###### If Statements
+Here is the basic structure of an if statement. If you want to execute multiple
+statements, you need to wrap them in curly braces.
+
+if (condition1)
+statement1
+else if (condition2)
+statement2
+else if (condition3)
+statement3
+else
+statement4
+
+###### The Ternary Operator
+String className = (income > 100_000) ? “First” : “Economy”;
+
+**This is a shorthand to write the following code:**
+
+String className;
+if (income > 100_000)
+className = “First”;
+else
+className = “Economy”;
+
+###### Switch Statements
+We use switch statements to execute different parts of the code depending on the
+value of a variable.
+
+switch (x) {
+case 1:
+…
+break;
+case 2:
+…
+break;
+default:
+…
+}
+
+After each case clause, we use the **break** statements to jump out of the switch
+block.
